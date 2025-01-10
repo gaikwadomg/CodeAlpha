@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: normal;
+            text-align: center;
+            font-weight: 800;
+            color: #838383;
+            background: #191B20;
+        }
+        .body1 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery-container {
+            width: 70%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            display: none;
+        }
+        .gallery img.active {
+            display: block;
+        }
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="txt">Image Gallery</h1>
+    <div class="body1">
+
+        
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="./img/pexels-nout-gons-80280-248159.jpg" class="active" alt="Image 1">
+                <img src="./img/pexels-minan1398-906150.jpg" alt="Image 2">
+                <img src="./img/pexels-singkham-178541-1108572.jpg" alt="Image 2">
+                <img src="./img/pexels-minan1398-906150.jpg" alt="Image 2">
+                <img src="./img/pexels-asphotograpy-1002703.jpg" alt="Image 3">
+        </div>
+        <button class="nav-btn prev" onclick="prevImage()">&#10094; Prev</button>
+        <button class="nav-btn next" onclick="nextImage()">Next &#10095;</button>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+
+        function showImage(index) {
+            images.forEach(img => img.classList.remove('active'));
+            images[index].classList.add('active');
+        }
+
+        function prevImage() {
+            currentImageIndex--;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+            showImage(currentImageIndex);
+        }
+    </script>
+</div>
+</body>
+</html>
