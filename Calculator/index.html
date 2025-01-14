@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: fantasy;
+        color: black;
+        background: #fff;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
+    }
+    body .calculator1{
+        margin: 0 auto;
+        width: fit-content;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 60px;
+        padding: 10px;
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
+
+    }
+    .calculator{
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
+    }
+    h1{
+        padding: 10px;
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+        color: white;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .buttons{
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+
+    }
+
+    .button{
+        margin: 2px;
+        padding: 10px;
+        width: 43px;
+        border-radius: 10px;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        
+    }
+
+    #display{
+        width: 230px;
+        margin: 10px;
+        padding: 10px;
+        text-align: right;
+        border-radius: 10px;
+        background: transparent;
+        border: none;
+        font-size: 25px;
+        color: white;
+    }
+
+    input::placeholder{
+        color: #fff;
+    }
+    .or{
+        background: orange;
+    }
+    .grn{
+        color: greenyellow;
+    }
+
+</style>
+<body>
+    <h1>Calculator APP</h1>
+    <div class="calculator1">
+
+        <div class="calculator">
+            <input type="text" name="display" id="display" placeholder="0">
+            
+        <div class="buttons">
+            <button class="button grn" onclick="clearDisplay()">AC</button>
+            <button class="button grn" onclick="clearDisplay()">DEL</button>
+            <button class="button grn" onclick="clearDisplay()">%</button>
+            <button class="button grn" onclick="clearDisplay()">/</button>
+            
+            <br>
+            <button class="button" onclick="clearDisplay()">7</button>
+            <button class="button" onclick="clearDisplay()">8</button>
+            <button class="button" onclick="clearDisplay()">9</button>
+            <button class="button grn" onclick="clearDisplay()">*</button>
+            
+            <br>
+            <button class="button" onclick="clearDisplay()">4</button>
+            <button class="button" onclick="clearDisplay()">5</button>
+            <button class="button" onclick="clearDisplay()">6</button>
+            <button class="button grn" onclick="clearDisplay()">-</button>
+           
+            <br>
+            <button class="button" onclick="clearDisplay()">1</button>
+            <button class="button" onclick="clearDisplay()">2</button>
+            <button class="button" onclick="clearDisplay()">3</button>
+            <button class="button grn" onclick="clearDisplay()">+</button>
+            
+            <br>
+            <button class="button" onclick="clearDisplay()">00</button>
+            <button class="button" onclick="clearDisplay()">0</button>
+            <button class="button" onclick="clearDisplay()">.</button>
+            <button class="button or" onclick="clearDisplay()">=</button>
+            
+            <br>
+        </div>
+    </div>
+    </div>
+  
+    
+
+
+
+
+</body>
+<script>
+
+
+
+</script>
+</html>
