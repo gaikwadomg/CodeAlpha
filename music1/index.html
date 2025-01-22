@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rash</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <section>
+
+        <div class="navigation transp">
+            <nav class="transp navbar navbar-expand-lg navbar-dark bg-none p-3">
+            <a class="navbar-brand transp text-light" href="#">Music</a>
+            <button class="navbar-toggler transp" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" transp collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav transp ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link transp" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- home section  -->
+    
+
+    <div class="container mt-5  transp">
+        <div class="card transp">
+            <div class="card-body transp">
+                <h5 class="card-title transp">Trending Music</h5>
+                <p class="card-text transp">Discover the latest and trending music that everyone is talking about.</p>
+                <a href="./contact.html" id="bbb" class="btn text-light  border px-2 py-3 mb-5 ">Get In Touch With Us!</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="playerdiv">
+
+        
+        <div class="music-player ">
+            <div class="song-title">Now Playing: Satranga Song!</div>
+        <audio controls>
+            <!-- Add your audio source here -->
+            <source src="r.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="player-controls">
+            <button class="control-button" id="prevBtn">&#9668;</button>
+        <button class="control-button" id="playPauseBtn" onclick="togglePlayPause()"> <!-- Button click calls JavaScript function -->
+            <span class="play-pause-icon"></span>
+        </button>
+        <button class="control-button" id="nextBtn">&#9658;</button>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    <!-- home section  -->
+    
+</section>
+<!-- Your website content goes here -->
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 All rights reserved ! OMG@.</p>
+        <div class="social-icons">
+           
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</html>
